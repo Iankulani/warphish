@@ -6,8 +6,11 @@ warphish
 
 
 # Clone repository
+```bash
 git clone https://github.com/Iankulani/warphish.git
+
 cd warphish
+```
 
 # Run installer
 setup.bat

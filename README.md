@@ -1,6 +1,6 @@
 # warphish
 
-<img width="1536" height="1024" alt="war phish" src="https://github.com/user-attachments/assets/922c0af7-fd0a-4f16-b5f5-7600c4aa5988" />
+<img width="1106" height="824" alt="war phish" src="https://github.com/user-attachments/assets/172e77f4-d2f3-417d-bfe6-01012d68129f" />
 
 warphish
 

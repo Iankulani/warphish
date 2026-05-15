@@ -1,0 +1,28 @@
+warphish/
+├── warphish.py                 # Main application
+├── requirements.txt            # Python dependencies
+├── requirements-dev.txt        # Development dependencies
+├── setup.sh                    # Linux/macOS installation
+├── setup.bat                   # Windows installation
+├── Dockerfile                  # Docker image
+├── docker-compose.yml          # Docker Compose setup
+├── .gitlab-ci.yml              # GitLab CI/CD pipeline
+├── .env.example                # Environment variables template
+├── Makefile                    # Make commands
+├── tests/
+│   ├── __init__.py
+│   ├── test_commands.py
+│   ├── test_database.py
+│   ├── test_phishing.py
+│   ├── test_spoofing.py
+│   └── test_integration.py
+├── scripts/
+│   ├── install_tools.sh
+│   ├── healthcheck.py
+│   └── start_bots.py
+├── config/
+│   ├── nginx.conf
+│   └── supervisord.conf
+└── docs/
+    ├── INSTALLATION.md
+    └── COMMANDS.md

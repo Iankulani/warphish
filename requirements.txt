@@ -1,0 +1,40 @@
+# WAR PHISH - Core Requirements
+# Python 3.7+ required
+
+# Core Dependencies
+requests>=2.31.0
+cryptography>=41.0.0
+paramiko>=3.3.0
+selenium>=4.15.0
+
+# Bot Integrations
+discord.py>=2.3.0
+telethon>=1.34.0
+slack-sdk>=3.21.0
+
+# Network & Security
+scapy>=2.5.0
+python-nmap>=0.7.1
+dnspython>=2.4.0
+whois>=0.9.4
+
+# Web & UI
+Flask>=2.3.0
+Flask-SocketIO>=5.3.0
+python-socketio>=5.9.0
+eventlet>=0.33.0
+
+# Database
+sqlalchemy>=2.0.0
+
+# Utilities
+qrcode>=7.4.0
+Pillow>=10.0.0
+colorama>=0.4.6
+python-dotenv>=1.0.0
+pyyaml>=6.0
+
+# Google Services
+google-auth>=2.23.0
+google-auth-oauthlib>=1.1.0
+google-auth-httplib2>=0.1.0

@@ -1,0 +1,72 @@
+# 🦈 WAR PHISH - Docker Compose Configuration
+version: '3.8'
+
+services:
+  warphish:
+    build: .
+    container_name: warphish
+    restart: unless-stopped
+    network_mode: host  # Required for packet capture and spoofing
+    privileged: true     # Required for network operations
+    volumes:
+      - ./.warphish:/app/.warphish
+      - ./reports:/app/reports
+      - ./logs:/app/logs
+      - ./phishing_pages:/app/phishing_pages
+      - ./captured_credentials:/app/captured_credentials
+      - ./config:/app/config
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    environment:
+      - PYTHONUNBUFFERED=1
+      - TZ=UTC
+    env_file:
+      - .env
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+      - SYS_ADMIN
+    devices:
+      - /dev/net/tun
+    ports:
+      - "5000:5000"
+      - "8080:8080"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    depends_on:
+      - redis
+    networks:
+      - warphish_net
+
+  redis:
+    image: redis:7-alpine
+    container_name: warphish-redis
+    restart: unless-stopped
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes
+    networks:
+      - warphish_net
+
+  postgres:
+    image: postgres:15-alpine
+    container_name: warphish-db
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=warphish
+      - POSTGRES_PASSWORD=warphish_secure_password
+      - POSTGRES_DB=warphish
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - warphish_net
+
+volumes:
+  redis_data:
+  postgres_data:
+
+networks:
+  warphish_net:
+    driver: bridge

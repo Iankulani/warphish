@@ -1,0 +1,70 @@
+# 🦈 WAR PHISH - Dockerfile (Alpine Linux)
+FROM alpine:3.19
+
+LABEL maintainer="Ian Carter Kulani"
+LABEL description="WAR PHISH - Advanced Cybersecurity Command Center"
+LABEL version="1.0.0"
+
+# Install system dependencies
+RUN apk update && apk add --no-cache \
+    python3 \
+    py3-pip \
+    py3-virtualenv \
+    nmap \
+    nmap-scripts \
+    hping3 \
+    dsniff \
+    macchanger \
+    tcpdump \
+    netcat-openbsd \
+    whois \
+    bind-tools \
+    curl \
+    wget \
+    openssh-client \
+    libpcap-dev \
+    git \
+    gcc \
+    musl-dev \
+    linux-headers \
+    libffi-dev \
+    openssl-dev \
+    py3-cryptography \
+    py3-paramiko \
+    py3-requests \
+    py3-pillow \
+    && rm -rf /var/cache/apk/*
+
+# Set working directory
+WORKDIR /app
+
+# Copy requirements first for better caching
+COPY requirements.txt .
+COPY requirements-dev.txt .
+
+# Install Python dependencies
+RUN pip3 install --no-cache-dir --upgrade pip && \
+    pip3 install --no-cache-dir -r requirements.txt && \
+    pip3 install --no-cache-dir gunicorn eventlet
+
+# Copy application files
+COPY warphish.py .
+COPY scripts/ ./scripts/
+COPY config/ ./config/
+
+# Create directories
+RUN mkdir -p .warphish reports logs phishing_pages wordlists captured_credentials
+
+# Set permissions
+RUN chmod +x warphish.py
+RUN chmod +x scripts/*.sh
+
+# Expose ports
+EXPOSE 5000 8080 8000
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+    CMD python3 scripts/healthcheck.py || exit 1
+
+# Run with supervisord or direct
+ENTRYPOINT ["python3", "warphish.py"]

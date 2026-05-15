@@ -6,7 +6,7 @@ warphish
 
 
 # Clone repository
-git clone https://github.com/yourusername/warphish.git
+git clone https://github.com/Iankulani/warphish.git
 cd warphish
 
 # Run installer

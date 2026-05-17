@@ -2,6 +2,16 @@
 
 <img width="1106" height="824" alt="war phish" src="https://github.com/user-attachments/assets/172e77f4-d2f3-417d-bfe6-01012d68129f" />
 
+[![GitHub stars](https://img.shields.io/github/stars/Iankulani/warphish?style=for-the-badge&logo=github)](https://github.com/Iankulani/warphish/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Iankulani/warphish?style=for-the-badge&logo=github)](https://github.com/Iankulani/warphish/network)
+[![GitHub watchers](https://img.shields.io/github/watchers/Iankulani/warphish?style=for-the-badge&logo=github)](https://github.com/Iankulani/warphish/watchers)
+[![GitHub contributors](https://img.shields.io/github/contributors/Iankulani/warphish?style=for-the-badge&logo=github)](https://github.com/Iankulani/warphish/graphs/contributors)
+[![GitHub last commit](https://img.shields.io/github/last-commit/Iankulani/warphish?style=for-the-badge&logo=git)](https://github.com/Iankulani/warphish/commits/main)
+[![Docker Pulls](https://img.shields.io/docker/pulls/iankulaniking_phisher/warphish?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/iankulaniking_phisher/warphish) <!-- Replace with actual Docker Hub path if different -->
+[![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Windows%20%7C%20macOS-blue?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Iankulani/warphish)
+[![Python](https://img.shields.io/badge/python-3.x-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+
 War Phish is an advanced cybersecurity operations platform engineered to unify offensive security testing, social engineering simulations, remote command orchestration, and network intelligence into a single command-driven ecosystem. Designed for security researchers, red teams, penetration testers, cyber defense analysts, and enterprise security operators, the platform provides a powerful framework for conducting controlled security assessments, awareness campaigns, and tactical infrastructure operations across multiple communication environments and deployment channels.
 
 # Clone repository

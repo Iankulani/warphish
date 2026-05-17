@@ -2,8 +2,7 @@
 
 <img width="1106" height="824" alt="war phish" src="https://github.com/user-attachments/assets/172e77f4-d2f3-417d-bfe6-01012d68129f" />
 
-warphish
-
+War Phish is an advanced cybersecurity operations platform engineered to unify offensive security testing, social engineering simulations, remote command orchestration, and network intelligence into a single command-driven ecosystem. Designed for security researchers, red teams, penetration testers, cyber defense analysts, and enterprise security operators, the platform provides a powerful framework for conducting controlled security assessments, awareness campaigns, and tactical infrastructure operations across multiple communication environments and deployment channels.
 
 # Clone repository
 ```bash

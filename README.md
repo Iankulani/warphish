@@ -104,9 +104,9 @@ The spoofing engine enables advanced network manipulation for testing network se
 * ARP Spoofing/Poisoning
 * Intercept network traffic between hosts
 
-Test switch security and ARP inspection
+* Test switch security and ARP inspection
 
-Enable man-in-the-middle attack simulations
+* Enable man-in-the-middle attack simulations
 
 # DNS Spoofing
 
@@ -174,11 +174,12 @@ WAR PHISH enables command and control through SEVEN different communication plat
 * Voice channel notifications
 
 # 🔔 Webhook Notifications
-Generic webhook support for custom integrations
 
-Zapier/Make automation compatibility
+* Generic webhook support for custom integrations
 
-Alert forwarding to any HTTP endpoint
+* Zapier/Make automation compatibility
+
+* Alert forwarding to any HTTP endpoint
 
 # Dark Web Links & Intelligence
 

@@ -12,195 +12,320 @@
 [![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Windows%20%7C%20macOS-blue?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Iankulani/warphish)
 [![Python](https://img.shields.io/badge/python-3.x-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 
-War Phish is an all-in-one adversarial emulation software designed for red team operators, white hat hackers, and authorized security professionals. Built by Accurate Cyber Defense, it merges social engineering, network exploitation, and real-time C2 communication into a single attack framework. War Phish is also embraced by red hat hackers for proactive threat hunting and counter-adversary operations.
+WAR PHISH is a comprehensive cybersecurity software developed by Accurate Cyber Defense, designed as an all-in-one command center for security professionals, penetration testers, red team operators, and ethical hackers. This powerful tool integrates multiple attack vectors, reconnaissance capabilities, and communication platforms into a single, unified interface.
 
-Key Capabilities
+# Core Capabilities
 
-Cyber Drill Simulations
-Launch full-scope breach exercises: phishing campaigns, credential harvesting, endpoint deployment, and insider threat emulation. Customize attack lifecycles to test blue team readiness.
+🎯 Cyber Drill Simulations
+WAR PHISH includes a complete cyber drill simulation engine that allows security teams to conduct realistic attack scenarios:
 
-Social Engineering Engine
-Generate convincing lures, clone login portals, and automate voice/SMS phishing (vishing/smishing). Track user behavior analytics and bypass MFA with real-time proxy interception.
+* Automated Attack Simulations: Generate realistic cyber attack patterns including credential harvesting, network infiltration, and social engineering campaigns
 
-Network Penetration Testing Commands
-Built-in command suite includes:
-nmap -sV -sC -O -T4 target
-crackmapexec smb target -u users.txt -p passes.txt
-responder -I eth0 -wF
-msfconsole -q -r resource.rc
-Full integration with Metasploit, Empire, and Cobalt Strike (license required).
+* Red Team vs Blue Team Exercises: Coordinate full-scale security drills with real-time metrics and performance tracking
 
-Nikto Integration
-One-click Nikto web scanner: nikto -h https://target.com -ssl -Format html -o scan_report. Automated vulnerability discovery for misconfigurations, outdated servers, and dangerous CGIs.
+* Scenario Builder: Create custom attack scenarios with specific parameters, targets, and success criteria
 
-Network Mapping
-Layer 2/3 discovery with ARP spoofing, LLMNR/NBT-NS poisoning, and automated topology graphing. Export maps to GraphML or Visio.
+* Performance Analytics: Track response times, detection rates, and mitigation effectiveness across drill sessions
 
-Multi-Channel C2 Communication
-Control War Phish from any platform. The agent communicates with your command server via:
+* After-Action Reports: Comprehensive drill reports with vulnerability findings and recommendations
 
-* Telegram (bot commands + encrypted callbacks)
+# 🎭 Social Engineering Suite
 
-* Discord
+The social engineering module enables sophisticated phishing campaigns and user awareness testing:
 
+* 50+ Professional Phishing Templates: Pre-built templates for Facebook, Instagram, Twitter/X, Gmail, LinkedIn, GitHub, PayPal, banking portals, and corporate VPN login pages
 
-* Slack (slash commands & webhook alerts)
+* Credential Capture Engine: Real-time credential harvesting with IP logging, user agent tracking, and geolocation
 
-* iMessage (via PyPush bridge)
+* Multi-Channel Delivery: Deploy phishing links via email, SMS, messaging apps, or QR codes
 
-* Google Chat (space integration)
+* Campaign Management: Track click rates, conversion rates, and user interactions
 
-* Web Application (full-featured dashboard with live session management)
+* Awareness Training Reports: Generate detailed reports for employee security awareness programs
 
-# Dark Web Links
-War Phish includes a curated, read-only list of operational dark web resources (.onion) for threat intelligence, breach data correlation, and adversary infrastructure monitoring. Access requires explicit user enablement and compliance with local laws.
+# 🌐 Network Penetration Testing Commands
+WAR PHISH provides direct integration with industry-standard penetration testing tools:
 
-# Who It's For
+# Command	Function
+* nmap	Full port scanning, service detection, OS fingerprinting
+* nikto	Web server vulnerability scanning (integrated)
+* curl/wget	HTTP/HTTPS request manipulation
+* netcat	TCP/UDP connection testing and banner grabbing
+* ssh	Remote connection testing and brute force simulation
+* whois/dig	DNS reconnaissance and domain information gathering
+* traceroute	Network path discovery and hop analysis
+* ping	ICMP testing and network latency measurement
 
-* White Hat Hackers – authorized assessments, phishing simulations, and compliance testing
+#🕸️ Nikto Integration
 
-* Red Hat Hackers – active counter-hacking and defending compromised networks
+* WAR PHISH features deep integration with Nikto, the powerful web server scanner:
 
-* Security Teams – continuous cyber drill orchestration
+* Web Vulnerability Scanning: Automatically test for over 6,700 potentially dangerous files and CGI scripts
 
-# Legal & Ethical Use
-War Phish is a dual-use tool. Accurate Cyber Defense licenses this software exclusively to verified organizations, pentesting professionals, and researchers. Unauthorized use against systems without explicit written permission is illegal. Red hat usage must comply with active authorization or defensive operations within owned environments.
+* Server Configuration Auditing: Identify misconfigured HTTP headers, outdated software versions, and insecure defaults
 
-# Clone repository
+* Subdomain Enumeration: Discover hidden web properties and admin interfaces
+
+* SSL/TLS Testing: Validate certificate configurations and cipher suite security
+
+* Custom Plugin Support: Extend Nikto's capabilities with custom database checks
+
+# 🗺️ Network Mapping & Reconnaissance
+* Complete network discovery and mapping capabilities:
+
+* Automatic Network Discovery: Scan entire subnets to identify live hosts and services
+
+* Topology Mapping: Generate visual network maps showing device relationships and communication paths
+
+* Service Enumeration: Identify running services, versions, and potential vulnerabilities
+
+* OS Fingerprinting: Determine operating systems through TCP/IP stack analysis
+
+* Open Port Analysis: Comprehensive port scanning with service version detection
+
+# Spoofing Engine
+
+The spoofing engine enables advanced network manipulation for testing network security controls:
+
+# IP Spoofing
+* Craft and send packets with forged source IP addresses
+
+* Test ingress/egress filtering effectiveness
+
+* Validate anti-spoofing protections
+
+# MAC Address Spoofing
+* Change network interface MAC addresses
+
+* Test MAC filtering and port security
+
+* Bypass MAC-based authentication systems
+
+* ARP Spoofing/Poisoning
+* Intercept network traffic between hosts
+
+Test switch security and ARP inspection
+
+Enable man-in-the-middle attack simulations
+
+# DNS Spoofing
+
+* Redirect domain requests to attacker-controlled servers
+
+* Test DNS security and DNSSEC validation
+
+* Validate DNS filtering and sinkhole configurations
+
+Multi-Platform Communication Integration
+WAR PHISH enables command and control through SEVEN different communication platforms, allowing operators to maintain access through various channels:
+
+# 💬 Telegram Bot
+
+* Full command execution via Telegram messages
+
+* Real-time alerts and credential notifications
+
+* Support for inline keyboard commands
+
+* End-to-end encrypted communication
+
+# 📱 iMessage (macOS)
+
+* Native Apple Messages integration
+
+* Send commands from any Apple device
+
+* Receive captured credential alerts
+
+* Seamless iOS/macOS ecosystem integration
+
+# 💼 Slack Bot
+* Enterprise-ready Slack integration
+
+* Private channel command execution
+
+* Rich message formatting for results
+
+* Team collaboration features
+
+# 🌐 Google Chat
+
+* Google Workspace integration
+
+* Thread-based command responses
+
+* Card-based output formatting
+
+* Attachment support for reports
+
+# 🖥️ Web Application Dashboard
+* Real-time command execution interface
+
+* Live analytics and statistics charts
+
+* Port scan result visualization
+
+* Multi-user session management
+
+# 💬 Discord Bot
+* Server-based command control
+* Role-based access management
+* Rich embed output formatting
+* Voice channel notifications
+
+# 🔔 Webhook Notifications
+Generic webhook support for custom integrations
+
+Zapier/Make automation compatibility
+
+Alert forwarding to any HTTP endpoint
+
+# Dark Web Links & Intelligence
+
+WAR PHISH includes curated dark web resources for threat intelligence gathering:
+
+Intelligence Sources
+Active dark web market monitoring links
+
+* Threat actor forum scrapers
+
+* Data breach notification services
+
+* Ransomware leak site monitoring
+
+* Exploit database aggregators
+
+* Dark Web Operations
+* Tor network integration via SOCKS5 proxy
+
+* .onion address resolution and navigation
+
+* Secure anonymous communication channels
+
+* Dark web content extraction tools
+
+Target Users
+# 🔴 Red Hat Hackers (Red Team)
+
+* Full offensive security toolkit for authorized penetration testing
+
+* Evasion techniques and persistence mechanisms
+
+* Custom payload generation and delivery
+
+* Post-exploitation framework integration
+
+# ⚪ White Hat Hackers (Ethical Hackers)
+* Comprehensive vulnerability assessment tools
+
+* Compliance reporting (PCI-DSS, HIPAA, SOC2)
+
+* Client-ready penetration test reports
+
+* Remediation guidance and recommendations
+
+# 🟢 System Administrators
+* Network monitoring and anomaly detection
+
+* Security control validation tools
+
+* User awareness testing capabilities
+
+* Incident response simulation
+
+# 🟣 Purple Team
+* Combined red/blue team exercise coordination
+ 
+* Detection effectiveness measurement
+ 
+* Response time optimization
+ 
+* Control gap identification
+
+# Technical Architecture
+Command System
+* WAR PHISH supports over 5,000 security commands across multiple categories:
+
+* Reconnaissance and information gathering
+
+* Exploitation and post-exploitation
+
+* Persistence and privilege escalation
+
+* Lateral movement and pivoting
+
+* Data exfiltration testing
+
+* Cleanup and anti-forensics
+
+# Database & Logging
+* SQLite backend for lightweight local deployment
+
+* Complete command history with timestamps and execution metrics
+
+* Credential storage with encryption at rest
+
+* Port scan results with service version tracking
+
+* Spoofing attempt logging for audit trails
+
+# API & Extensibility
+* RESTful API for custom tool integration
+
+* Webhook support for SIEM and SOAR platforms
+
+* Plugin architecture for community extensions
+
+* Python API for custom script development
+
+Sample Use Cases
+Penetration Test Execution
+
+# Discover network hosts
 ```bash
-git clone https://github.com/Iankulani/warphish.git
-cd warphish
+scan 192.168.1.0/24
 ```
-
-# Run installer
+# Scan for open ports and services
 ```bash
-setup.bat
+nmap 192.168.1.100 -sV -p-
 ```
-# Activate environment
-
-venv\Scripts\activate
-
-# Run WAR PHISH
+# Generate phishing campaign
 ```bash
-python warphish.py
+generate_phishing corporate_vpn
 ```
-
-# Docker
-
-# Build image
+# Start credential harvesting
 ```bash
-docker build -t warphish:latest .
+phishing_start link_abc123
 ```
-# Run with docker-compose
+# Test network security controls
 ```bash
-docker-compose up -d
+spoof_ip 10.0.0.1 192.168.1.1 192.168.1.100
 ```
-
-# Or run directly
+Security Awareness Campaign
+# Create training phishing page
 ```bash
-docker run -it --rm --privileged --network host warphish:latest
+generate_phishing it_security_update
 ```
-# System Dependencies
-# Ubuntu/Debian
+# Launch awareness campaign
 ```bash
-sudo apt-get update
-sudo apt-get install -y \
-    nmap hping3 dsniff macchanger tcpdump \
-    netcat-openbsd whois dnsutils curl wget ssh \
-    python3-pip build-essential libpcap-dev
-RHEL/CentOS/Fedora
-sudo yum install -y \
-    nmap hping3 dsniff macchanger tcpdump \
-    nc whois bind-utils curl wget openssh-clients \
-    python3-devel libpcap-devel
+phishing_start awareness_campaign_2024
 ```
-# macOS
+# Monitor employee interactions
+credentials
+
+# Generate training report
+report
+Network Security Validation
+
+# Map network topology
 ```bash
-brew install nmap hping3 dsniff macchanger tcpdump netcat whois curl wget
+nmap target_network -T4 -A
 ```
-# Bot Configuration
-# Discord Bot
+# Test ARP inspection
 ```bash
-Go to https://discord.com/developers/applications
+arp_spoof 192.168.1.100 192.168.1.1
 ```
-Create new application → Bot
-
-Copy token to .env as DISCORD_TOKEN
-
-Enable Privileged Gateway Intents
-
-# Telegram Bot
-Message @BotFather on Telegram
-
-Create new bot with /newbot
-
-Copy token to .env as TELEGRAM_BOT_TOKEN
-
-Get API ID/Hash from https://my.telegram.org
-
-# Slack Bot
+# Validate DNS security
 ```bash
-Go to https://api.slack.com/apps
-````
-Create new app → From scratch
-
-Add Bot Token scope
-
-Install to workspace → Copy token
-
-Running as Root
-For full functionality (packet capture, spoofing), run as root:
-
-```bash
-sudo python3 warphish.py
-```
-# or
-```bash
-sudo docker-compose up -d
-```
-Troubleshooting
-Common Issues
-
-"Module not found"
-
-```bash
-pip install -r requirements.txt --force-reinstall
-"Permission denied" (Linux)
-```
-```bash
-sudo chmod +x warphish.py
-sudo ./warphish.py
-"Address already in use"
-```
-
-# Change ports in config or kill existing processes
-```bash
-sudo lsof -i :5000
-sudo kill -9 <PID>
-Docker issues
-```
-
-# Rebuild
-```bash
-docker-compose down
-docker-compose build --no-cache
-docker-compose up -d
-Post-Installation
-Edit .env with your bot tokens
-
-Configure web dashboard settings
-
-Test with ping 127.0.0.1
-
-Generate test phishing link
-
-Access dashboard at http://localhost:5000
-```
-Updating
-
-```bash
-git pull
-source venv/bin/activate
-pip install -r requirements.txt --upgrade
-python3 warphish.py
+dns_spoof internal.corp.com 10.0.0.1
 ```

@@ -1,0 +1,11 @@
+# Build Requirements for Alpine
+
+setuptools>=68.0.0
+wheel>=0.41.0
+pip>=23.3.0
+cython>=3.0.0
+build>=1.0.0
+twine>=4.0.0
+cffi>=1.16.0
+greenlet>=3.0.0
+cryptography>=41.0.0  # For compilation

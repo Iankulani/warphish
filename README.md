@@ -31,7 +31,7 @@ WAR PHISH includes a complete cyber drill simulation engine that allows security
 
 # 🎭 Social Engineering Suite
 
-The social engineering module enables sophisticated phishing campaigns and user awareness testing:
+# The social engineering module enables sophisticated phishing campaigns and user awareness testing:
 
 * 50+ Professional Phishing Templates: Pre-built templates for Facebook, Instagram, Twitter/X, Gmail, LinkedIn, GitHub, PayPal, banking portals, and corporate VPN login pages
 
@@ -56,7 +56,7 @@ WAR PHISH provides direct integration with industry-standard penetration testing
 * traceroute	Network path discovery and hop analysis
 * ping	ICMP testing and network latency measurement
 
-#🕸️ Nikto Integration
+# 🕸️ Nikto Integration
 
 * WAR PHISH features deep integration with Nikto, the powerful web server scanner:
 

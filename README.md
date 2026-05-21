@@ -12,30 +12,89 @@
 [![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Windows%20%7C%20macOS-blue?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Iankulani/warphish)
 [![Python](https://img.shields.io/badge/python-3.x-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 
-War Phish is an advanced cybersecurity operations platform engineered to unify offensive security testing, social engineering simulations, remote command orchestration, and network intelligence into a single command-driven ecosystem. Designed for security researchers, red teams, penetration testers, cyber defense analysts, and enterprise security operators, the platform provides a powerful framework for conducting controlled security assessments, awareness campaigns, and tactical infrastructure operations across multiple communication environments and deployment channels.
+War Phish is an all-in-one adversarial emulation software designed for red team operators, white hat hackers, and authorized security professionals. Built by Accurate Cyber Defense, it merges social engineering, network exploitation, and real-time C2 communication into a single attack framework. War Phish is also embraced by red hat hackers for proactive threat hunting and counter-adversary operations.
+
+Key Capabilities
+
+Cyber Drill Simulations
+Launch full-scope breach exercises: phishing campaigns, credential harvesting, endpoint deployment, and insider threat emulation. Customize attack lifecycles to test blue team readiness.
+
+Social Engineering Engine
+Generate convincing lures, clone login portals, and automate voice/SMS phishing (vishing/smishing). Track user behavior analytics and bypass MFA with real-time proxy interception.
+
+Network Penetration Testing Commands
+Built-in command suite includes:
+nmap -sV -sC -O -T4 target
+crackmapexec smb target -u users.txt -p passes.txt
+responder -I eth0 -wF
+msfconsole -q -r resource.rc
+Full integration with Metasploit, Empire, and Cobalt Strike (license required).
+
+Nikto Integration
+One-click Nikto web scanner: nikto -h https://target.com -ssl -Format html -o scan_report. Automated vulnerability discovery for misconfigurations, outdated servers, and dangerous CGIs.
+
+Network Mapping
+Layer 2/3 discovery with ARP spoofing, LLMNR/NBT-NS poisoning, and automated topology graphing. Export maps to GraphML or Visio.
+
+Multi-Channel C2 Communication
+Control War Phish from any platform. The agent communicates with your command server via:
+
+* Telegram (bot commands + encrypted callbacks)
+
+* Discord
+
+
+* Slack (slash commands & webhook alerts)
+
+* iMessage (via PyPush bridge)
+
+* Google Chat (space integration)
+
+* Web Application (full-featured dashboard with live session management)
+
+# Dark Web Links
+War Phish includes a curated, read-only list of operational dark web resources (.onion) for threat intelligence, breach data correlation, and adversary infrastructure monitoring. Access requires explicit user enablement and compliance with local laws.
+
+# Who It's For
+
+* White Hat Hackers – authorized assessments, phishing simulations, and compliance testing
+
+* Red Hat Hackers – active counter-hacking and defending compromised networks
+
+* Security Teams – continuous cyber drill orchestration
+
+# Legal & Ethical Use
+War Phish is a dual-use tool. Accurate Cyber Defense licenses this software exclusively to verified organizations, pentesting professionals, and researchers. Unauthorized use against systems without explicit written permission is illegal. Red hat usage must comply with active authorization or defensive operations within owned environments.
 
 # Clone repository
 ```bash
 git clone https://github.com/Iankulani/warphish.git
-
 cd warphish
 ```
 
 # Run installer
+```bash
 setup.bat
-
+```
 # Activate environment
+
 venv\Scripts\activate
 
 # Run WAR PHISH
+```bash
 python warphish.py
-Docker
-bash
-# Build image
-docker build -t warphish:latest .
+```
 
+# Docker
+
+# Build image
+```bash
+docker build -t warphish:latest .
+```
 # Run with docker-compose
+```bash
 docker-compose up -d
+```
 
 # Or run directly
 ```bash
@@ -58,17 +117,19 @@ sudo yum install -y \
 # macOS
 ```bash
 brew install nmap hping3 dsniff macchanger tcpdump netcat whois curl wget
+```
 # Bot Configuration
 # Discord Bot
+```bash
 Go to https://discord.com/developers/applications
-
+```
 Create new application → Bot
 
 Copy token to .env as DISCORD_TOKEN
 
 Enable Privileged Gateway Intents
 
-Telegram Bot
+# Telegram Bot
 Message @BotFather on Telegram
 
 Create new bot with /newbot
@@ -77,9 +138,10 @@ Copy token to .env as TELEGRAM_BOT_TOKEN
 
 Get API ID/Hash from https://my.telegram.org
 
-Slack Bot
+# Slack Bot
+```bash
 Go to https://api.slack.com/apps
-
+````
 Create new app → From scratch
 
 Add Bot Token scope

@@ -329,3 +329,126 @@ arp_spoof 192.168.1.100 192.168.1.1
 ```bash
 dns_spoof internal.corp.com 10.0.0.1
 ```
+
+
+# How to clone
+```bash
+git clone https://github.com/Iankulani/warphish.git
+cd warphish
+```
+
+
+
+
+
+
+# Installation Requirements
+
+# Core dependencies
+```bash
+python3 >= 3.7
+pip3
+```
+# Network tools
+```bash
+nmap
+nikto
+curl
+wget
+netcat-openbsd
+openssh-client
+whois
+bin
+d-tools
+```
+# Spoofing tools
+```bash
+hping3
+macchanger
+dsniff (arpspoof, dnsspoof)
+```
+# Python packages
+```bash
+cryptography
+requests
+paramiko
+scapy
+telethon
+discord.py
+slack-sdk
+selenium
+python-whois
+qrcode
+google-auth-oauthlib
+```
+# Ethical Usage Disclaimer
+WAR PHISH is developed for legitimate security testing and educational purposes only.
+
+Appropriate use cases include:
+
+✅ Authorized penetration testing with written consent
+
+✅ Internal security team training and exercises
+
+✅ Educational cybersecurity programs
+
+✅ Security research and vulnerability disclosure
+
+✅ Compliance validation and audit preparation
+
+# Improper use includes:
+
+* ❌ Unauthorized access to computer systems
+
+* ❌ Credential theft or identity fraud
+
+* ❌ Malware deployment or ransomware operations
+
+* ❌ Privacy violations or surveillance
+
+* ❌ Any activity violating local, state, or federal laws
+
+Users must obtain explicit written permission before testing any system they do not own or manage.
+
+Support & Resources
+Documentation
+Complete command reference guide
+
+API documentation for developers
+
+Tutorial videos and walkthroughs
+
+Sample penetration test reports
+
+Community
+Discord support server
+
+GitHub issue tracking
+
+Security researcher disclosure program
+
+Feature request and voting system
+
+Professional Services
+Custom deployment assistance
+
+Enterprise license options
+
+Dedicated support contracts
+
+Team training sessions
+
+Version Information
+Current Version: 1.0.0
+Author: Ian Carter Kulani (Accurate Cyber Defense)
+License: Proprietary - Educational and Authorized Testing Only
+Release Date: 2024
+
+# Conclusion
+
+WAR PHISH represents a significant advancement in cybersecurity testing software, combining network penetration testing, social engineering, spoofing capabilities, and multi-platform command-and-control into a single integrated platform. Whether conducting red team operations, validating security controls, or training security awareness, WAR PHISH provides the tools needed to identify and remediate vulnerabilities before malicious actors can exploit them.
+
+The inclusion of seven communication platforms (Telegram, iMessage, Slack, Google Chat, Discord, web dashboard, and webhooks) ensures operators can maintain flexible access regardless of network restrictions. Dark web integration provides threat intelligence capabilities, while the comprehensive command system offers over 5,000 security operations.
+
+Accurate Cyber Defense continues to develop WAR PHISH with regular updates, new features, and community-driven improvements to ensure it remains at the forefront of cybersecurity testing technology.
+

@@ -421,4 +421,6 @@ Accurate Cyber Defense continues to develop WAR PHISH with regular updates, new 
 
 
 
-#
+# Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Iankulani/warphish&type=Date)](https://star-history.com/#Iankulani/warphish&Date)

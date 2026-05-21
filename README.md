@@ -330,16 +330,16 @@ arp_spoof 192.168.1.100 192.168.1.1
 dns_spoof internal.corp.com 10.0.0.1
 ```
 
-
 # How to clone
 ```bash
 git clone https://github.com/Iankulani/warphish.git
 cd warphish
 ```
+# How to run
+```bash
 
-
-
-
+python3 warphish
+```
 
 
 # Installation Requirements
@@ -386,15 +386,15 @@ WAR PHISH is developed for legitimate security testing and educational purposes 
 
 Appropriate use cases include:
 
-✅ Authorized penetration testing with written consent
+* ✅ Authorized penetration testing with written consent
 
-✅ Internal security team training and exercises
+* ✅ Internal security team training and exercises
 
-✅ Educational cybersecurity programs
+* ✅ Educational cybersecurity programs
 
-✅ Security research and vulnerability disclosure
+* ✅ Security research and vulnerability disclosure
 
-✅ Compliance validation and audit preparation
+* ✅ Compliance validation and audit preparation
 
 # Improper use includes:
 
@@ -408,41 +408,8 @@ Appropriate use cases include:
 
 * ❌ Any activity violating local, state, or federal laws
 
-Users must obtain explicit written permission before testing any system they do not own or manage.
+* Users must obtain explicit written permission before testing any system they do not own or manage.
 
-Support & Resources
-Documentation
-Complete command reference guide
-
-API documentation for developers
-
-Tutorial videos and walkthroughs
-
-Sample penetration test reports
-
-Community
-Discord support server
-
-GitHub issue tracking
-
-Security researcher disclosure program
-
-Feature request and voting system
-
-Professional Services
-Custom deployment assistance
-
-Enterprise license options
-
-Dedicated support contracts
-
-Team training sessions
-
-Version Information
-Current Version: 1.0.0
-Author: Ian Carter Kulani (Accurate Cyber Defense)
-License: Proprietary - Educational and Authorized Testing Only
-Release Date: 2024
 
 # Conclusion
 
@@ -452,3 +419,6 @@ The inclusion of seven communication platforms (Telegram, iMessage, Slack, Googl
 
 Accurate Cyber Defense continues to develop WAR PHISH with regular updates, new features, and community-driven improvements to ensure it remains at the forefront of cybersecurity testing technology.
 
+
+
+#

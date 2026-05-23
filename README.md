@@ -44,6 +44,7 @@ WAR PHISH includes a complete cyber drill simulation engine that allows security
 * Awareness Training Reports: Generate detailed reports for employee security awareness programs
 
 # 🌐 Network Penetration Testing Commands
+
 WAR PHISH provides direct integration with industry-standard penetration testing tools:
 
 # Command	Function
@@ -185,8 +186,9 @@ WAR PHISH enables command and control through SEVEN different communication plat
 
 WAR PHISH includes curated dark web resources for threat intelligence gathering:
 
-Intelligence Sources
-Active dark web market monitoring links
+* Intelligence Sources
+ 
+* Active dark web market monitoring links
 
 * Threat actor forum scrapers
 
@@ -205,7 +207,8 @@ Active dark web market monitoring links
 
 * Dark web content extraction tools
 
-Target Users
+# Target Users
+
 # 🔴 Red Hat Hackers (Red Team)
 
 * Full offensive security toolkit for authorized penetration testing

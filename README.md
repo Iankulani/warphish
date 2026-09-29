@@ -423,7 +423,9 @@ The inclusion of seven communication platforms (Telegram, iMessage, Slack, Googl
 
 Accurate Cyber Defense continues to develop WAR PHISH with regular updates, new features, and community-driven improvements to ensure it remains at the forefront of cybersecurity testing technology.
 
+# Documentation
 
+# References
 
 # Star History
 

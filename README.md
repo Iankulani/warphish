@@ -1,5 +1,7 @@
 # warphish
 
+<div align="center">
+
 <img width="360" height="360" alt="war phish" src="https://github.com/user-attachments/assets/172e77f4-d2f3-417d-bfe6-01012d68129f" />
 
 [![GitHub stars](https://img.shields.io/github/stars/Iankulani/warphish?style=for-the-badge&logo=github)](https://github.com/Iankulani/warphish/stargazers)
@@ -11,6 +13,8 @@
 [![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Windows%20%7C%20macOS-blue?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Iankulani/warphish)
 [![Python](https://img.shields.io/badge/python-3.x-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+
+</div>
 
 WAR PHISH is a comprehensive cybersecurity software developed by Accurate Cyber Defense, designed as an all-in-one command center for security professionals, penetration testers, red team operators, and ethical hackers. This powerful tool integrates multiple attack vectors, reconnaissance capabilities, and communication platforms into a single, unified interface.
 
